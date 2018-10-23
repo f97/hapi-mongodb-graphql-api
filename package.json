@@ -1,0 +1,18 @@
+{
+  "name": "hapi-mongodb-graphql-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^17.6.0",
+    "mongoose": "^5.3.5",
+    "nodemon": "^1.18.4"
+  }
+}
