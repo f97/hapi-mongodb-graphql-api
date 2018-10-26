@@ -1,5 +1,7 @@
 const hapi = require('hapi');
 const db = require('./utils/db');
+const Hello = require('./routes/Hello')
+const Book = require('./routes/Book')
 
 const server = hapi.server({
     port: 4000,
@@ -7,13 +9,10 @@ const server = hapi.server({
 });
 
 const init = async () => {  
-    server.route({
-        method: 'GET',
-        path: '/',
-        handler: function (request, h) {
-            return 'Hello Sói!';
-        }
-    })
+    server.route(
+        Hello,
+        Book
+    )
     await server.start();
     console.log(`Server running at: ${server.info.uri}`);
 };

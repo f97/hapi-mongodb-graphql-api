@@ -1,5 +1,3 @@
-"use strict";
-
 module.exports = function() {
 	return [
         {
@@ -8,6 +6,6 @@ module.exports = function() {
             handler: function (request, h) {
                 return 'Hello!';
             }
-        }
+        },
 	];
 }();
