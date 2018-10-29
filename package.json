@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "graphql": "^14.0.2",
+    "graphql-server-hapi": "^1.4.0",
     "hapi": "^17.6.0",
     "mongoose": "^5.3.5",
     "nodemon": "^1.18.4"
