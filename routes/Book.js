@@ -5,6 +5,10 @@ module.exports = function() {
         { 
             method: 'GET',
             path: '/api/v1/books',
+            config: {
+                description: 'Get all books',
+                tags: ['api', 'book', 'v1']
+            },
             handler: function (request, h) {
                 return Book.find();
             }
@@ -12,6 +16,10 @@ module.exports = function() {
         {
             method: 'POST',
             path: '/api/v1/books',
+            config: {
+                description: 'Post a book',
+                tags: ['api', 'book', 'v1']
+            },
             handler: function (request, h) {
                 const {name, author, price} = request.payload;
                 const book = new Book({
